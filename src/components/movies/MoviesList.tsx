@@ -24,7 +24,7 @@ export const MoviesList = ({ movies }: MovieItemProps) => {
 		return Array.from({ length: 10 }).map((_, index) => {
 			return (
 				<Grid item key={index} xs={6} md={3}>
-					<Skeleton variant="rectangular" width={276} height={393} />
+					<Skeleton variant="rectangular" width={276} height={393} title={"loading"} />
 				</Grid>
 			);
 		});

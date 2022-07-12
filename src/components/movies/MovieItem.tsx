@@ -58,7 +58,7 @@ export const MovieItem = ({ movie }: MovieItemProps) => {
 					boxSizing: 'border-box',
 				}}
 			>
-				<Typography variant="body1" component="p" color={'white'}>
+				<Typography className='movie-item__rank' variant="body1" component="p" color={'white'}>
 					# {movie.rank}
 				</Typography>
 				<div
@@ -75,6 +75,7 @@ export const MovieItem = ({ movie }: MovieItemProps) => {
 						}}
 					/>{' '}
 					<Typography
+						className='movie-item__rating'
 						variant="body1"
 						component="p"
 						color={'white'}
@@ -88,7 +89,7 @@ export const MovieItem = ({ movie }: MovieItemProps) => {
 				</div>
 			</div>
 			<CardContent>
-				<Typography gutterBottom variant="body1" component="p" minHeight={48} fontWeight={'bold'}>
+				<Typography className='movie-item__name' gutterBottom variant="body1" component="p" minHeight={48} fontWeight={'bold'}>
 					{movie.title} ({movie.year})
 				</Typography>
 				<Typography gutterBottom variant="caption" component="p">
